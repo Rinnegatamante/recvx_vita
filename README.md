@@ -14,6 +14,7 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - Widescreen support (Defaults to On).
 - Ability to disable Motion Blur (Disabled by default).
 - Support for French, Spanish and German languages.
+- Doors/Stairs animations skip (Press X to skip them).
 
 ## Special Controls
 
