@@ -13,6 +13,7 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - Built-in cheats menu.
 - Widescreen support (Defaults to On).
 - Ability to disable Motion Blur (Disabled by default).
+- Support for French, Spanish and German languages.
 
 ## Special Controls
 
@@ -22,11 +23,12 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 
 - Install `libshacccg.suprx`, if you don't have it already, by following [this guide](https://samilops2.gitbook.io/vita-troubleshooting-guide/shader-compiler/extract-libshacccg.suprx).
 - Install the vpk from the Release tab.
-- Extract the zip from the Release tab in a folder in your PC.
+- Extract the `setup.zip` from the Release tab in a folder in your PC.
 - Place the iso file of `Resident Evil: Code Veronica X NTSC-U` for PS2 named as `recvx.iso` in the same folder where you extracted the zip.
 - If you don't have it already, install [Python 3.10 or higher](https://www.python.org/downloads/windows/).
-- Open a command line in the same folder where you extracted the zip and run: `python pc-tools/prepare_assets.py "recvx.iso" "recvx" --ffmpeg "ffmpeg.exe`
+- Open a command line in the same folder where you extracted the zip and run: `python pc-tools/prepare_assets.py "recvx.iso" "recvx" --ffmpeg "ffmpeg.exe"`
 - Place `recvx.iso`, `native-assets.psarc` and `movies.psarc` in `ux0:data/recvx`.
+- Extract the `data.zip` from the Release Tab in `ux0:data/recvx`.
 
 ## Credits
 
