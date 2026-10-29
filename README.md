@@ -9,16 +9,18 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - 960x544 internal resolution.
 - Support for MSAA (up to 4x, defaults to 4x).
 - Modern controls option.
-- First Person mode (with dual analogs controls if Modern Controls enabled).
+- First Person and Third Person (Over the shoulder) mode (with dual analogs controls if Modern Controls enabled).
 - Built-in cheats menu.
 - Widescreen support (Defaults to On).
 - Ability to disable Motion Blur (Disabled by default).
 - Support for French, Spanish and German languages.
 - Doors/Stairs animations skip (Press X to skip them).
+- Support for BioRand randomizer (tested with v.3.3.2).
 
 ## Special Controls
 
 - Additional options menu accessible by touching the top-left portion of the screen.
+- Flicking the right analog will trigger a 180 turn when playing in fixed camera tank controls mode.
 
 ## How to Install
 
@@ -30,6 +32,25 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - Open a command line in the same folder where you extracted the zip and run: `python pc-tools/prepare_assets.py "recvx.iso" "recvx" --ffmpeg "ffmpeg.exe"`
 - Place `recvx.iso`, `native-assets.psarc` and `movies.psarc` in `ux0:data/recvx`.
 - Extract the `data.zip` from the Release Tab in `ux0:data/recvx`.
+
+## How to use BioRand
+
+- Download [BioRand](https://github.com/biorand/classic/releases)
+- Generate a new randomizer with it using your iso file as source.
+- Place `recvx_biorand.iso` and `mod_biorand/log_pl0.txt` in the same folder where you extracted `setup.zip`.
+- Open a command line in the same folder where you extracted the zip and run: `pc-tools\prepare_biorand.bat "recvx.iso" "recvx_biorand.iso" "log_pl0.txt" "recvx/native-assets.psarc" "recvx-biorand"`
+- Copy `recvx-biorand/biorand.psarc` in `ux0:data/recvx` and enable BIORAND option in game.
+
+## Changelog
+
+### v.1.1
+
+- Added support for BioRand randomizer.
+- Added Third Person (Over the shoulder) mode option.
+- Fixed a bug making pushing objects while using modern controls to be near impossible.
+- Improved direction movement handling during camera changes when using modern controls.
+- Added a new cheat TAPELESS SAVE that allows to save without tapes requirements.
+- Fixed a bug causing some stairs animation to render only the upper part of the animation.
 
 ## Credits
 
