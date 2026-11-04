@@ -17,9 +17,10 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - Difficulty selection (Very Easy, Easy, Normal).
 - Ability to disable Motion Blur (Disabled by default).
 - Customizable fog density.
-- Support for French, Spanish, Italian and German languages.
+- Support for French, Spanish, Italian, Russian, Turkish, Brazilian Portuguese and German languages.
 - Doors/Stairs animations skip (Press X to skip them).
 - Support for BioRand randomizer (tested with v.3.3.2).
+- Post-processing effects support (CRT, CRT Bleeding, FXAA, Greyscale, LCD 3x, Negative, Sepia, Sharp Bilinear Grid, Sharp Bilinear Scanlines and Vignette).
 
 ## Special Controls
 
@@ -47,6 +48,25 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 
 ## Changelog
 
+### v.1.3
+
+- Added Russian, Turkish and Brazilian Portuguese localizations support.
+- Fixed a bug causing the camera shown after taking the Golden Lugers with Claire to show only a wall.
+- Fixed a bug causing C Type control scheme to have attack and reload mapped on the same button.
+- Made so that if Widescreen is enabled, the PS3 16:9 background image will be used in the Main Menu.
+- Added a custom PS2 boot animation at game launch.
+- Added a new option to hide the top/down black bars during in game cutscenes.
+- Added optional post-processing effects support (CRT, CRT Bleeding, FXAA, Greyscale, LCD 3x, Negative, Sepia, Sharp Bilinear Grid, Sharp Bilinear Scanlines and Vignette).
+- Greatly reduced CPU workload (up to 40% reduction).
+- Optimized MSAA so that its impact on GPU workload is significantly reduced.
+- Made so that MSAA can now be changed without requiring a game restart.
+- Fixed missing walls in two specific cameras when using Widescreen in the Art Room.
+- Made so that when Widescreen is enabled, when transitioning to 4:3 screens (eg: menus), there won't be anymore a few frames where the actual 3D scene is cropped to 4:3.
+- Fixed a bug causing the robots in Antarctica base to have their emitted white light clipped under certain circumstances.
+- Fixed a bug causing the ceiling of the golden lugers secret room to obscure completely the camera when attempting to grab the golden lugers.
+- Fixed a bug causing inputs to get stuck and Chris to be locked in a broken animation after getting hit by Alexia's fire.
+- Improved timing synchronization between video and audio during in-engine cutscenes when sporadic framedrops happen.
+
 ### v.1.2
 
 - Updated to latest vitaGL commit.
@@ -54,6 +74,7 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - Fixed a bug causing misaligned text in the Memory Card selection when using languages different from English.
 - Added Italian localization support.
 - Added a new option to change fog density across the whole game.
+- Added a new option to enable/disable shadow casting.
 - Improved widescreen geometry clipping: now improperly clipped geometry will be a lot more rare when playing in widescreen.
 - Fixed a bug causing the monitor when Steve gets trapped in the lugers room to show a garbled image.
 - Fixed Z-Fighting issues on several models. (Example: the prison map at the start of the game)
@@ -84,5 +105,9 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - shoui for the [original core adaptation to make the decompilation boot on PSVita](https://github.com/shoui520/recvx-vita)
 - Matichu for testing the game from start to finish with multiple runs to ensure everything works as expected.
 - Standard-Republic for the Livearea assets.
+- aap for [osdbits](https://github.com/aap/osdbits) used as source material to recreate the PS2 bootscreen sequence.
 - fmil95 for providing some useful bugfixes snippets.
-- ProjectZero92 for the Italian localizaion patch integrated in the port.
+- ProjectZero92 for the Italian localization patch integrated in the port.
+- BROSKO Team for the Russian localization patch integrated in the port.
+- Gledson999 for the Brazilian Portuguese localization patch integrated in the port.
+- Patriot Çeviri team for the Turkish localization patch integrated in the port.
