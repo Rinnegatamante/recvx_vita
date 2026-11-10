@@ -21,6 +21,7 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - Doors/Stairs animations skip (Press X to skip them).
 - Support for BioRand randomizer (tested with v.3.3.2).
 - Post-processing effects support (CRT, CRT Bleeding, FXAA, Greyscale, LCD 3x, Negative, Sepia, Sharp Bilinear Grid, Sharp Bilinear Scanlines and Vignette).
+- Adjustable brightness and color saturation.
 
 ## Special Controls
 
@@ -47,6 +48,13 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 - Copy `recvx-biorand/biorand.psarc` in `ux0:data/recvx` and enable BIORAND option in game.
 
 ## Changelog
+
+### v.1.4
+
+- Added support for computer screens in localizations. Now when interacting with computers, they'll have properly translated textrs.
+- Added a new option under Graphics Options to change game brightness.
+- Added a new option under Graphics Ooptions to change color saturation.
+- Further optimized CPU usage by simplifying handling of translucent meshes. (CPU usage reduces by up to 30% depending on situation)
 
 ### v.1.3
 
