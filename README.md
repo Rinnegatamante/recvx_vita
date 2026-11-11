@@ -49,6 +49,10 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 
 ## Changelog
 
+### v.1.4.1
+
+- Fixed a regression that causes translucent meshes to fully cover up anything behind them.
+
 ### v.1.4
 
 - Added support for computer screens in localizations. Now when interacting with computers, they'll have properly translated textrs.
