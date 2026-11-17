@@ -49,6 +49,11 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 
 ## Changelog
 
+### v.1.4.5
+
+- Fixed more translucent meshes issues.
+- Adjusted MSAA changes transitions: now when changing MSAA, framebuffers will be fully cleared instantly, resulting in a better CDRAM management and reducing framedrop issues due to misallocated colosurfaces.
+
 ### v.1.4.1
 
 - Fixed a regression that causes translucent meshes to fully cover up anything behind them.
