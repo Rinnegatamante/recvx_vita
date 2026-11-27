@@ -49,6 +49,12 @@ Port of Resident Evil: Code Veronica X for PSVita based off [the decompilation](
 
 ## Changelog
 
+### v.1.5
+
+- Fixed a bug causing the player position to not always be correct in the map view.
+- Fixed a bug causing the map and/or the various elements in the map to flicker.
+- Fixed a bug causing stair animations to be cancelable earlier with first person view causing the player to fly midair.
+
 ### v.1.4.5
 
 - Fixed more translucent meshes issues.
